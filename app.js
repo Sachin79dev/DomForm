@@ -4,13 +4,14 @@ const field2 = document.querySelector("#email")
 const users = document.querySelector(".users")
 
 
+
 form.addEventListener('submit', (events) => {
     events.preventDefault()
 
     let name = field1.value
     let email = field2.value
 
-    if(name.trim() === "" && email.trim() === "") return
+    if (name.trim() === "" && email.trim() === "") return
 
     users.innerHTML += `<div class="user_card">
             <div class="img_box">
@@ -21,9 +22,27 @@ form.addEventListener('submit', (events) => {
                 <h3>${name}</h3>
                 <p>${email}</p>
             </div>
+
+            <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="del">Delete</button>
+            </div>
         </div>`
 
 
     form.reset()
 
+    const del = document.querySelector(".del")
+
+    // console.log(del);
+
+
+    del.forEach((n) => {
+        n.addEventListener('click', () => {
+            users.innerHTML = ""
+        })
+    })
+
 })
+
+
