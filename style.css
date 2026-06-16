@@ -45,7 +45,7 @@ button {
 
 
 .users {
-    margin-top: 20px;
+    margin-top: 60px;
     height: 100%;
     display: flex;
     gap: 10px;
@@ -61,7 +61,7 @@ button {
 }
 
 .img_box {
-    height: 70%;
+    height: 50%;
     width: 100%;
 }
 
@@ -84,21 +84,32 @@ h3 {
 }
 
 .edit {
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
     background-color: #ffca08;
-    color: #ffffff;
+    color: #000000;
     outline: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
+    border: none;
 }
 
 .del {
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
     background-color: #ff4608;
-    color: #ffffff;
+    color: #000000;
     outline: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
+    border: none;
+}
+
+
+.actions {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
